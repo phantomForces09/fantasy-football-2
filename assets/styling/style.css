@@ -1,0 +1,98 @@
+body{
+    background-color: whitesmoke;
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    width:150px;
+}
+button:hover{
+    background-color: rgb(212, 211, 211);
+}
+input{
+    border-radius: 1px;
+    background-color:whitesmoke;
+    width: 200px;
+}
+input:hover{
+    border: 2px solid dodgerblue;
+}
+form {
+    max-width: 500px;
+    height:500px;
+    background-color:white;
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    text-align: left;
+}
+main{
+    max-width: 1000px;
+    height:500px;
+    background-color:white;
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    text-align: left;
+}
+page{
+    max-width: 1000px;
+    height:500px;
+    background-color:white;
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    text-align: left;
+}
+::selection{
+    background-color:dodgerblue;
+    color: white;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.smallText{
+    font-size:5px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+.redirectSource{
+    color:white;
+}
+.ged{
+    background-color:#e4a72f;
+    color: #444f69;
+}
+.ged:hover{
+    background-color:#e9ba5a;
+}
+.logout{
+    background-color:red;
+    color:white;
+}
+.logout:hover{
+    background-color:rgb(255, 72, 72);
+}
+.big{
+    font-size:25px;
+    font-family:tahoma;
+}
+.center{
+    text-align:center;
+}
+.sub{
+    font-size:10px;
+}

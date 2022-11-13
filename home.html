@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <link rel = "stylesheet" href = "assets/styling/style.css">
+    <link rel = "stylesheet" href = "assets/styling/tooltip.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <script src = "assets/src/script.js"></script>
+    <script src = "assets/src/data.js"></script>
+        <center>
+            <br>
+            <main>
+                <div class = "center">
+                    <h2>Fantasy Football II - <span id = "season">1st</span> season</h2>
+                </div>
+                <left>
+                    <div class="tooltip"> &nbsp;<b>Coach: </b> <span id = "usernameRee"></span>
+                        &nbsp;&nbsp;<span class = "tooltiptext">&nbsp;Current Team Coach&nbsp;</span>
+                    </div>
+                    <div class="tooltip"> &nbsp;<b>TeT: </b> <span id = "teamEnergy"></span>
+                        &nbsp;&nbsp;<span class = "tooltiptext">&nbsp;Team Energy Today&nbsp;</span>
+                    </div><br>
+                    <button onclick = "start()">Reset</button>
+                    <button onclick="document.getElementById('id01').style.display='block'">Recruit Team</button>
+                    <button onclick = "train()">Train Team</button>
+                    <button></button>
+                    <button onclick = "logout()" class = "logout">Logout</button>
+                </left>
+            </main>
+        </center>
+        <script>
+            document.title = "FFII | " + localStorage.getItem("username") + "'s Team";
+            document.getElementById("usernameRee").innerHTML = localStorage.getItem("username");
+            document.getElementById("teamEnergy").innerHTML = localStorage.getItem("energy");
+        </script>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <br>
+                <input id = "quarterback" placeholder = "Name of Quarterback…" required>
+                <input id  = "runner" placeholder = "Name of Running Back…" required>
+                <input id = "wide" placeholder = "Name of Wide Receiver…" required>
+                <input id = "guard" placeholder = "Name of Guard…" required>
+                <br><button type = "submit" onclick = "saveTeam()"><i>Save Team</i></button>
+                <br><br>
+                <p>
+                    <span id = "q"></span><br>
+                    <span id = "r"></span><br>
+                    <span id = "w"></span><br>
+                    <span id = "g"></span>
+                </p>
+                <script>
+                    document.getElementById("q").innerHTML = "<b>Quarterback:</b>" + localStorage.getItem("quarterback");
+                    document.getElementById("r").innerHTML = "<b>Running Back:</b>" + localStorage.getItem("runningback");
+                    document.getElementById("w").innerHTML = "<b>Wide Receiver:</b>" + localStorage.getItem("widereceiver");
+                    document.getElementById("g").innerHTML = "<b>Guard:</b>" + localStorage.getItem("guard");
+                </script>
+                <br><br><br><br>
+              </div>
+            </div>
+        </div>
+</body>
