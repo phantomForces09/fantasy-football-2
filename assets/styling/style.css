@@ -96,3 +96,32 @@ page{
 .sub{
     font-size:10px;
 }
+.yo2:hover{
+    color:dodgerblue;
+    text-decoration: underline;
+}
+.brush{
+    font-family:fantasy;
+}
+.brush2{
+    font-family:fantasy;
+    font-size: 18px;
+}
+.monospace{
+    font-family:courier;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.advertisement {
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+    font-family: arial;
+}
